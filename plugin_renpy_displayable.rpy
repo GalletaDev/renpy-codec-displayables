@@ -1,4 +1,22 @@
 
+image p_pink = Solid("#FF00EA")
+
+image particules_pink = Transform("p_pink", size=(3, 3))
+
+image SpiralInfinity:
+    InfiniteSpiral("particules_pink", count=34, max_radius=250, max_size=128, spin_speed=6.0)
+    xalign 0.5
+    yalign 0.5
+    zoom 1.5
+
+image ChaoticSpiral:
+    ChaoticSpiral("particules_pink", count=34, max_radius=400, max_size=64, spin_speed=2.0)
+    xalign 0.5
+    yalign 0.5
+    zoom 1.3
+
+
+
 
 init python:
 
