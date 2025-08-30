@@ -19,6 +19,7 @@ image ChaoticSpiral:
 
 
 init python:
+    import random
 
     class InfiniteSpiral(renpy.Displayable):
         def __init__(self, image, count=26, max_radius=250, max_size=128, spin_speed=6.0, **properties):
